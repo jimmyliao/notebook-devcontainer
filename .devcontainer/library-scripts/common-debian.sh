@@ -451,4 +451,7 @@ echo -e "\
     RC_SNIPPET_ALREADY_ADDED=${RC_SNIPPET_ALREADY_ADDED}\n\
     ZSH_ALREADY_INSTALLED=${ZSH_ALREADY_INSTALLED}" > "${MARKER_FILE}"
 
+echo "Install Azure Developer CLI"
+curl -fsSL https://aka.ms/install-azd.sh | bash
+
 echo "Done!"
