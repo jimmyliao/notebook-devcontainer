@@ -8,6 +8,9 @@ FROM jupyter/datascience-notebook
 # is in a group with the same name (in this case jovyan).  So we must first make that so.
 COPY library-scripts/common-debian.sh /tmp/library-scripts/
 USER root
+
+RUN curl -fsSL https://aka.ms/install-azd.sh | bash
+
 RUN apt-get update \
  && groupadd jovyan \
  && usermod -g jovyan -a -G users jovyan \
