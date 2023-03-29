@@ -1,4 +1,4 @@
-# Use Jupyter Notebook with Dev Container
+# Use Jupyter Notebook and Azure Developer CLI with Dev Container
 
 ## Prerequisite
 1. Visual Studio Code Installed
