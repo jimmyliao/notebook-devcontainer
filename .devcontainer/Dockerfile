@@ -12,9 +12,8 @@ RUN apt-get update \
  && groupadd jovyan \
  && usermod -g jovyan -a -G users jovyan \
  && bash /tmp/library-scripts/common-debian.sh \
+ && curl -fsSL https://aka.ms/install-azd.sh | bash \
  && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts
-
-RUN curl -fsSL https://aka.ms/install-azd.sh | bash
 
 # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
 # COPY requirements.txt /tmp/pip-tmp/
